@@ -262,14 +262,14 @@ h2{font-size:clamp(2rem,5.2vw,3.2rem);margin:.7rem 0 .9rem;letter-spacing:-.015e
 :root:not([data-theme="dark"]) .card-link{color:#1250d6}
 .card-link:hover{text-decoration:underline;text-underline-offset:4px}
 
-/* Modelos de espejos */
+/* Galería */
 .band{background:linear-gradient(180deg,transparent,rgba(26,95,224,.07) 20%,rgba(26,95,224,.07) 80%,transparent)}
 .models{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 22px;margin:0 -4px;-webkit-overflow-scrolling:touch}
 .model{flex:0 0 78%;max-width:340px;scroll-snap-align:center;margin:0}
 .model .shot{aspect-ratio:4/4.6;background-size:cover;background-position:center;border-radius:0}
 .model.m1 .shot{background-image:var(--img-athenas)}
 .model.m2 .shot{background-image:var(--img-circular)}
-.model.m3 .shot{background-image:var(--img-cuadrado)}
+.model.m3 .shot{background-image:var(--img-cuadrado);background-position:68% center}
 .model figcaption{padding:1.1rem 1.3rem 1.3rem;display:grid;gap:.35rem}
 .model figcaption span.name{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:1.35rem;font-weight:600}
 .model figcaption span.name i{font-weight:400;color:var(--muted);margin-right:.25em}
@@ -407,7 +407,7 @@ footer{padding:clamp(40px,6vw,70px) 0 120px;border-top:1px solid var(--line);mar
     </a>
     <nav class="main" aria-label="Navegación principal">
       <a href="#servicios">Servicios</a>
-      <a href="#modelos">Modelos</a>
+      <a href="#modelos">Galería</a>
       <a href="#beneficios">Por qué SJF</a>
       <a href="#proceso">Proceso</a>
     </nav>
@@ -479,7 +479,7 @@ footer{padding:clamp(40px,6vw,70px) 0 120px;border-top:1px solid var(--line);mar
         <div class="svc-ico"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-led"/></svg></div>
         <h3>Espejos LED</h3>
         <p>Espejos con iluminación LED integrada, en la forma y el tamaño que mejor se adapten a tu baño, vestidor o sala.</p>
-        <a class="card-link" href="#modelos" aria-label="Ver modelos de espejos">Ver modelos <span aria-hidden="true">→</span></a>
+        <a class="card-link" href="#modelos" aria-label="Ver galería de espejos">Ver galería <span aria-hidden="true">→</span></a>
       </article>
       <article class="glass svc reveal">
         <div class="svc-ico"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-shower"/></svg></div>
@@ -507,17 +507,17 @@ footer{padding:clamp(40px,6vw,70px) 0 120px;border-top:1px solid var(--line);mar
 <section class="sec band" id="modelos" aria-labelledby="h-mod">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Modelos de espejos</span>
-      <h2 id="h-mod">Espejos con carácter propio</h2>
+      <span class="eyebrow">Galería</span>
+      <h2 id="h-mod">Espejos y puertas con carácter propio</h2>
       <p>Elige un modelo como punto de partida o cuéntanos tu idea: lo adaptamos a tu espacio.</p>
     </div>
-    <div class="models" role="region" aria-label="Galería de modelos de espejos" tabindex="0">
+    <div class="models" role="region" aria-label="Galería de espejos y puertas de baño" tabindex="0">
       <figure class="glass model m1 reveal">
         <div class="shot" role="img" aria-label="Espejo Athenas, de forma orgánica, sobre una pared clara con consola de madera y planta"></div>
         <figcaption>
           <span class="name"><i>Espejo</i>Athenas</span>
           <small>Silueta orgánica y fluida que convierte el espejo en una pieza decorativa.</small>
-          <a class="card-link" href="#cotizar" data-service="espejos LED" data-model="Espejo Athenas" aria-label="Cotizar el Espejo Athenas">Cotizar este modelo <span aria-hidden="true">→</span></a>
+          <a class="card-link" href="#cotizar" data-service="espejos LED" data-msg="Me interesa el Espejo Athenas." aria-label="Cotizar el Espejo Athenas">Cotizar este modelo <span aria-hidden="true">→</span></a>
         </figcaption>
       </figure>
       <figure class="glass model m2 reveal" style="--d:.1s">
@@ -525,15 +525,15 @@ footer{padding:clamp(40px,6vw,70px) 0 120px;border-top:1px solid var(--line);mar
         <figcaption>
           <span class="name"><i>Espejo</i>Circular</span>
           <small>Líneas suaves y marco fino, ideal para recibidores, salas y dormitorios.</small>
-          <a class="card-link" href="#cotizar" data-service="espejos LED" data-model="Espejo Circular" aria-label="Cotizar el Espejo Circular">Cotizar este modelo <span aria-hidden="true">→</span></a>
+          <a class="card-link" href="#cotizar" data-service="espejos LED" data-msg="Me interesa el Espejo Circular." aria-label="Cotizar el Espejo Circular">Cotizar este modelo <span aria-hidden="true">→</span></a>
         </figcaption>
       </figure>
       <figure class="glass model m3 reveal" style="--d:.2s">
-        <div class="shot" role="img" aria-label="Espejo cuadrado con iluminación LED en el contorno sobre un lavamanos en un baño moderno"></div>
+        <div class="shot" role="img" aria-label="Cabina de ducha con puerta de vidrio transparente en un baño moderno, junto a un lavamanos y un espejo iluminado"></div>
         <figcaption>
-          <span class="name"><i>Espejo</i>Cuadrado</span>
-          <small>Formato rectangular con iluminación LED en el contorno, pensado para baños modernos.</small>
-          <a class="card-link" href="#cotizar" data-service="espejos LED" data-model="Espejo Cuadrado" aria-label="Cotizar el Espejo Cuadrado">Cotizar este modelo <span aria-hidden="true">→</span></a>
+          <span class="name"><i>Puertas</i>de baño</span>
+          <small>Cabinas y puertas de ducha en vidrio que dan amplitud y luz al baño.</small>
+          <a class="card-link" href="#cotizar" data-service="puertas de baño / cabinas de ducha en vidrio" data-msg="Me interesa una puerta de baño en vidrio." aria-label="Cotizar una puerta de baño">Cotizar este modelo <span aria-hidden="true">→</span></a>
         </figcaption>
       </figure>
     </div>
@@ -706,8 +706,8 @@ footer{padding:clamp(40px,6vw,70px) 0 120px;border-top:1px solid var(--line);mar
   document.querySelectorAll('[data-service]').forEach(function (a) {
     a.addEventListener('click', function () {
       fService.value = a.getAttribute('data-service');
-      var model = a.getAttribute('data-model');
-      if (model && !fMsg.value.trim()) fMsg.value = 'Me interesa el ' + model + '.';
+      var msg = a.getAttribute('data-msg');
+      if (msg && !fMsg.value.trim()) fMsg.value = msg;
       clearError(fService, 'e-service');
     });
   });
